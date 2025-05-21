@@ -36,7 +36,7 @@ export default function Home() {
 }
 
 
-function LinkItems({ data }: { data: Object []}){
+function LinkItems({ data }: { data: object []}){
   return (
     <div>
       {data.map((itm:any,key:any)=>{
