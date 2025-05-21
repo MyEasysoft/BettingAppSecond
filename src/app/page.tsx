@@ -2,13 +2,13 @@ import Image from 'next/image';
 import css from './layout.module.css'
 
 export default function Home() {
-  const data:any = [
-    {title:"Footbball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
-    {title:"Basketball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
-    {title:"Volleyball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
-    {title:"Tennis",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
-    {title:"Formula 1",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
-  ];
+  // const data:any = [
+  //   {title:"Footbball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+  //   {title:"Basketball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+  //   {title:"Volleyball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+  //   {title:"Tennis",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+  //   {title:"Formula 1",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+  // ];
   return (
     
     <div className={css.main_content}>
@@ -23,7 +23,7 @@ export default function Home() {
           <span className={css.small_header}>FULL LIST</span>
         </div>
         <div>
-         <LinkItems data={data}/>
+         <LinkItems />
         </div>
      </div>
      <div className={css.main}></div>
@@ -36,7 +36,7 @@ export default function Home() {
 }
 
 
-function LinkItems({ data }: { data: object []}){
+function LinkItems(){
   return (
     <div>
       {/* {data.map(({src,title}:{src:string,title:string},key:number)=>{
