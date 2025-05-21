@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import css from "./layout.module.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,58 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className={css.main_container}>
+         
+          <div className={css.content}>
+            <div className="nav_con">
+              <nav className="nav">
+                  <div className="link_con">
+                    <Link href={"/"}>Sport</Link>
+                    <Link href={"/games/vip"}>VIP Casino</Link>
+                    <Link href={"/games/casino"}>Casino</Link>
+                    <Link href={"/games/livecasino"}>Live Casino</Link>
+                    <Link href={"/games/virtual"}>Virtual</Link>
+                  </div>
+                  <div className="link_con">
+                    <Link href={"/games/livecasino"}>Responsible Gambling</Link>
+                    <Link href={"/games/virtual"}>Help</Link>
+                  </div>
+              </nav>
+              <div className={css.logo_con}>
+                <div className={css.logo}>BetGreat</div>
+                <div className={css.login_btn}>
+                  <Link href={"/login"}>Login</Link>
+                </div>
+              </div>
+              <div className={css.menu_con}>
+                <div className={css.logo}></div>
+                <div className={css.flex_row_2}>
+                  <Link href={"/login"}>Live</Link>
+                  <Link href={"/login"}>Pregame</Link>
+                </div>
+                <div className={css.flex_row}>
+                  <select className={css.no_border}>
+                    <option>English</option>
+                  </select>
+                  <select>
+                    <option>Decimal</option>
+                  </select>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" width={16} height={16} focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-sc-ea9ulj-0 bhLQRR sc-dkrFOg jKpGpm">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+           
+            {children}
+          </div>
+          {false?
+            <footer>My footer</footer>
+          :""}
+          
+        </div>
+       
       </body>
     </html>
   );
