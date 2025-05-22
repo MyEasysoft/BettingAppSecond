@@ -8,6 +8,29 @@ export default function Home() {
     {title:"Volleyball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
     {title:"Tennis",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
     {title:"Formula 1",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Martial Arts",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Table Tennis",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Field Hockey",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Netball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Handball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Amer. Football",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Baseball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Water Polo",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Moto Racing",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Footbball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Basketball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Volleyball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Tennis",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Formula 1",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Martial Arts",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Table Tennis",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Field Hockey",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Netball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Handball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Amer. Football",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Baseball",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Water Polo",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
+    {title:"Moto Racing",src:"https://static-assets.nexray.app/assets/sports/1.svg"},
   ];
   return (
     
@@ -37,8 +60,6 @@ export default function Home() {
      <div className={css.rside}></div>
       
     </div>
-    
-    
   );
 }
 
